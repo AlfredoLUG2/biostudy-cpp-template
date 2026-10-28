@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "BioStudy Lab: compilar y ejecutar main.cpp",
+      "type": "process",
+      "command": "bash",
+      "args": ["scripts/bienvenida.sh"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    }
+  ]
+}

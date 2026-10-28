@@ -1,0 +1,8 @@
+# Compiled programs stay out of your repository.
+build/
+programa
+*.exe
+*.o
+*.obj
+*.out
+.DS_Store

@@ -1,0 +1,22 @@
+{
+  "name": "BioStudy Lab · C y C++",
+  "image": "mcr.microsoft.com/devcontainers/cpp:3.0.7-bookworm",
+  "remoteUser": "vscode",
+  "postCreateCommand": "bash scripts/bienvenida.sh",
+  "postAttachCommand": "bash scripts/bienvenida.sh --mostrar",
+  "waitFor": "postCreateCommand",
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["main.cpp", "README.md"]
+    },
+    "vscode": {
+      "extensions": ["ms-vscode.cpptools"],
+      "settings": {
+        "files.autoSave": "afterDelay",
+        "files.encoding": "utf8",
+        "editor.tabSize": 4,
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
